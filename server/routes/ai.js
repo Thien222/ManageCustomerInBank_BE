@@ -2,8 +2,7 @@ const express = require('express');
 const router = express.Router();
 require('dotenv').config();
 
-const { OpenAI } = require('openai');
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
 
 // POST /ai/chatbot
 router.post('/chatbot', async (req, res) => {
